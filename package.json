@@ -1,0 +1,22 @@
+{
+  "name": "serverless-api",
+  "version": "1.0.0",
+  "description": "This is serverless api for students",
+  "scripts": {
+    "start": "node api/students.js",
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "express-http-proxy": "^1.6.0"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "mongodb",
+    "vercel"
+  ],
+  "author": "Shivam Mishra <shivammishr16@gmail.com>",
+  "license": "ISC"
+}
