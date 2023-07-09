@@ -6,6 +6,8 @@ const { proxy } = require("express-http-proxy");
 
 const app = express();
 
+console.log("API is running");
+
 // Middleware to parse JSON request bodies
 app.use(express.json());
 
@@ -66,6 +68,14 @@ app.delete("/students/:id", (req, res) => {
 });
 
 const server = createServer(app);
+
 module.exports = (req, res) => {
   server(req, res);
 };
+
+const port =  3000;
+
+server.listen(port, () => {
+  console.log(`API is running on port ${port}`);
+  console.log('For testing, visit http://localhost:3000/students')
+});
