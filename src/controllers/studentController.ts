@@ -1,3 +1,7 @@
+/**
+ * @fileoverview This file is used to define the routes for the API.
+ * It is used to define the routes for the student resource.
+ */
 import { Request, Response } from "express";
 import { ObjectId } from "mongodb";
 import { getDB } from "../db";

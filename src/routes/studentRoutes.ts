@@ -1,3 +1,6 @@
+/**
+ * @fileoverview This file is used to wrap the routes for the student resource.
+ */
 import { Router } from "express";
 import {
   getStudents,
